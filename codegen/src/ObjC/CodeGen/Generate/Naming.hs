@@ -174,6 +174,7 @@ reservedNames = Set.fromList
   , "take", "drop", "reverse", "lookup", "words", "lines", "unwords"
   , "unlines", "otherwise", "undefined", "seq", "subtract"
   , "div", "mod", "rem", "quot", "negate", "abs", "signum"
+  , "floor"
   ]
 
 -- ---------------------------------------------------------------------------

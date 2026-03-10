@@ -237,7 +237,7 @@ main = withAutoreleasePool $ do
   StkV.setDistribution inputStack NSStackViewDistributionFill
 
   inputField <- TF.textFieldWithString ("" :: Id NSString)
-  TF.setPlaceholderString inputField ("What needs to be done?" :: Id NSString)
+  TF.setPlaceholderString inputField $ toRawId ("What needs to be done?" :: Id NSString)
   Font.systemFontOfSize 15 >>= Ctrl.setFont inputField
   -- Low horizontal hugging so the text field stretches to fill
   View.setContentHuggingPriority_forOrientation inputField
